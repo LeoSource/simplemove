@@ -37,11 +37,12 @@
 #pragma once
 
 #include "class_forward.h"
-#include <moveit/robot_state/robot_state.h>
-#include <moveit_msgs/RobotTrajectory.h>
-#include <moveit_msgs/RobotState.h>
+// #include "robot_state/robot_state.h"
+// #include <moveit_msgs/RobotTrajectory.h>
+// #include <moveit_msgs/RobotState.h>
 #include <deque>
 #include <memory>
+#include <limits>
 
 namespace robot_trajectory
 {
@@ -53,13 +54,13 @@ class RobotTrajectory
 {
 public:
   /** @brief construct a trajectory for the whole robot */
-  explicit RobotTrajectory(const moveit::core::RobotModelConstPtr& robot_model);
+  // explicit RobotTrajectory(const moveit::core::RobotModelConstPtr& robot_model);
 
   /** @brief construct a trajectory for the named JointModelGroup
    * If group is an empty string, this is equivalent to the first constructor,
    * otherwise it is equivalent to `RobotTrajectory(robot_model, robot_model->getJointModelGroup(group))`.
    */
-  RobotTrajectory(const moveit::core::RobotModelConstPtr& robot_model, const std::string& group);
+  // RobotTrajectory(const moveit::core::RobotModelConstPtr& robot_model, const std::string& group);
 
   /** @brief construct a trajectory for the JointModelGroup
    *  Only joints from the specified group will be considered in this trajectory,
@@ -67,7 +68,7 @@ public:
    *
    *  If group is nullptr this is equivalent to the first constructor.
    */
-  RobotTrajectory(const moveit::core::RobotModelConstPtr& robot_model, const moveit::core::JointModelGroup* group);
+  // RobotTrajectory(const moveit::core::RobotModelConstPtr& robot_model, const moveit::core::JointModelGroup* group);
 
   /** Assignment operator, performing a shallow copy, i.e. copying waypoints by pointer */
   RobotTrajectory& operator=(const RobotTrajectory&) = default;
@@ -78,58 +79,58 @@ public:
    */
   RobotTrajectory(const RobotTrajectory& other, bool deepcopy = false);
 
-  const moveit::core::RobotModelConstPtr& getRobotModel() const
-  {
-    return robot_model_;
-  }
+  // const moveit::core::RobotModelConstPtr& getRobotModel() const
+  // {
+  //   return robot_model_;
+  // }
 
-  const moveit::core::JointModelGroup* getGroup() const
-  {
-    return group_;
-  }
+  // const moveit::core::JointModelGroup* getGroup() const
+  // {
+  //   return group_;
+  // }
 
   const std::string& getGroupName() const;
 
   RobotTrajectory& setGroupName(const std::string& group_name)
   {
-    group_ = robot_model_->getJointModelGroup(group_name);
+    // group_ = robot_model_->getJointModelGroup(group_name);
     return *this;
   }
 
-  std::size_t getWayPointCount() const
-  {
-    return waypoints_.size();
-  }
+  // std::size_t getWayPointCount() const
+  // {
+  //   return waypoints_.size();
+  // }
 
-  const moveit::core::RobotState& getWayPoint(std::size_t index) const
-  {
-    return *waypoints_[index];
-  }
+  // const moveit::core::RobotState& getWayPoint(std::size_t index) const
+  // {
+  //   return *waypoints_[index];
+  // }
 
-  const moveit::core::RobotState& getLastWayPoint() const
-  {
-    return *waypoints_.back();
-  }
+  // const moveit::core::RobotState& getLastWayPoint() const
+  // {
+  //   return *waypoints_.back();
+  // }
 
-  const moveit::core::RobotState& getFirstWayPoint() const
-  {
-    return *waypoints_.front();
-  }
+  // const moveit::core::RobotState& getFirstWayPoint() const
+  // {
+  //   return *waypoints_.front();
+  // }
 
-  moveit::core::RobotStatePtr& getWayPointPtr(std::size_t index)
-  {
-    return waypoints_[index];
-  }
+  // moveit::core::RobotStatePtr& getWayPointPtr(std::size_t index)
+  // {
+  //   return waypoints_[index];
+  // }
 
-  moveit::core::RobotStatePtr& getLastWayPointPtr()
-  {
-    return waypoints_.back();
-  }
+  // moveit::core::RobotStatePtr& getLastWayPointPtr()
+  // {
+  //   return waypoints_.back();
+  // }
 
-  moveit::core::RobotStatePtr& getFirstWayPointPtr()
-  {
-    return waypoints_.front();
-  }
+  // moveit::core::RobotStatePtr& getFirstWayPointPtr()
+  // {
+  //   return waypoints_.front();
+  // }
 
   const std::deque<double>& getWayPointDurations() const
   {
@@ -160,59 +161,59 @@ public:
     return *this;
   }
 
-  bool empty() const
-  {
-    return waypoints_.empty();
-  }
+  // bool empty() const
+  // {
+    // return waypoints_.empty();
+  // }
 
   /**
    * \brief Add a point to the trajectory
    * \param state - current robot state
    * \param dt - duration from previous
    */
-  RobotTrajectory& addSuffixWayPoint(const moveit::core::RobotState& state, double dt)
-  {
-    return addSuffixWayPoint(std::make_shared<moveit::core::RobotState>(state), dt);
-  }
+  // RobotTrajectory& addSuffixWayPoint(const moveit::core::RobotState& state, double dt)
+  // {
+  //   return addSuffixWayPoint(std::make_shared<moveit::core::RobotState>(state), dt);
+  // }
 
   /**
    * \brief Add a point to the trajectory
    * \param state - current robot state
    * \param dt - duration from previous
    */
-  RobotTrajectory& addSuffixWayPoint(const moveit::core::RobotStatePtr& state, double dt)
-  {
-    state->update();
-    waypoints_.push_back(state);
-    duration_from_previous_.push_back(dt);
-    return *this;
-  }
+  // RobotTrajectory& addSuffixWayPoint(const moveit::core::RobotStatePtr& state, double dt)
+  // {
+  //   state->update();
+  //   waypoints_.push_back(state);
+  //   duration_from_previous_.push_back(dt);
+  //   return *this;
+  // }
 
-  RobotTrajectory& addPrefixWayPoint(const moveit::core::RobotState& state, double dt)
-  {
-    return addPrefixWayPoint(std::make_shared<moveit::core::RobotState>(state), dt);
-  }
+  // RobotTrajectory& addPrefixWayPoint(const moveit::core::RobotState& state, double dt)
+  // {
+  //   return addPrefixWayPoint(std::make_shared<moveit::core::RobotState>(state), dt);
+  // }
 
-  RobotTrajectory& addPrefixWayPoint(const moveit::core::RobotStatePtr& state, double dt)
-  {
-    state->update();
-    waypoints_.push_front(state);
-    duration_from_previous_.push_front(dt);
-    return *this;
-  }
+  // RobotTrajectory& addPrefixWayPoint(const moveit::core::RobotStatePtr& state, double dt)
+  // {
+  //   state->update();
+  //   waypoints_.push_front(state);
+  //   duration_from_previous_.push_front(dt);
+  //   return *this;
+  // }
 
-  RobotTrajectory& insertWayPoint(std::size_t index, const moveit::core::RobotState& state, double dt)
-  {
-    return insertWayPoint(index, std::make_shared<moveit::core::RobotState>(state), dt);
-  }
+  // RobotTrajectory& insertWayPoint(std::size_t index, const moveit::core::RobotState& state, double dt)
+  // {
+  //   return insertWayPoint(index, std::make_shared<moveit::core::RobotState>(state), dt);
+  // }
 
-  RobotTrajectory& insertWayPoint(std::size_t index, const moveit::core::RobotStatePtr& state, double dt)
-  {
-    state->update();
-    waypoints_.insert(waypoints_.begin() + index, state);
-    duration_from_previous_.insert(duration_from_previous_.begin() + index, dt);
-    return *this;
-  }
+  // RobotTrajectory& insertWayPoint(std::size_t index, const moveit::core::RobotStatePtr& state, double dt)
+  // {
+  //   state->update();
+  //   waypoints_.insert(waypoints_.begin() + index, state);
+  //   duration_from_previous_.insert(duration_from_previous_.begin() + index, dt);
+  //   return *this;
+  // }
 
   /**
    * \brief Add a specified part of a trajectory to the end of the current trajectory. The default (when \p start_index
@@ -231,7 +232,7 @@ public:
 
   RobotTrajectory& clear()
   {
-    waypoints_.clear();
+    // waypoints_.clear();
     duration_from_previous_.clear();
     return *this;
   }
@@ -240,8 +241,8 @@ public:
 
   double getAverageSegmentDuration() const;
 
-  void getRobotTrajectoryMsg(moveit_msgs::RobotTrajectory& trajectory,
-                             const std::vector<std::string>& joint_filter = std::vector<std::string>()) const;
+  // void getRobotTrajectoryMsg(moveit_msgs::RobotTrajectory& trajectory,
+  //                            const std::vector<std::string>& joint_filter = std::vector<std::string>()) const;
 
   /** \brief Copy the content of the trajectory message into this class. The trajectory message itself is not required
      to contain the values
@@ -249,8 +250,8 @@ public:
      point in the trajectory
       to be constructed internally is obtained by copying the reference state and overwriting the content from a
      trajectory point in \e trajectory. */
-  RobotTrajectory& setRobotTrajectoryMsg(const moveit::core::RobotState& reference_state,
-                                         const trajectory_msgs::JointTrajectory& trajectory);
+  // RobotTrajectory& setRobotTrajectoryMsg(const moveit::core::RobotState& reference_state,
+  //                                        const trajectory_msgs::JointTrajectory& trajectory);
 
   /** \brief Copy the content of the trajectory message into this class. The trajectory message itself is not required
      to contain the values
@@ -258,8 +259,8 @@ public:
      point in the trajectory
       to be constructed internally is obtained by copying the reference state and overwriting the content from a
      trajectory point in \e trajectory. */
-  RobotTrajectory& setRobotTrajectoryMsg(const moveit::core::RobotState& reference_state,
-                                         const moveit_msgs::RobotTrajectory& trajectory);
+  // RobotTrajectory& setRobotTrajectoryMsg(const moveit::core::RobotState& reference_state,
+  //                                        const moveit_msgs::RobotTrajectory& trajectory);
 
   /** \brief Copy the content of the trajectory message into this class. The trajectory message itself is not required
      to contain the values
@@ -268,14 +269,14 @@ public:
       using \e state. Each point in the trajectory  to be constructed internally is obtained by copying the reference
      state and overwriting the content
       from a trajectory point in \e trajectory. */
-  RobotTrajectory& setRobotTrajectoryMsg(const moveit::core::RobotState& reference_state,
-                                         const moveit_msgs::RobotState& state,
-                                         const moveit_msgs::RobotTrajectory& trajectory);
+  // RobotTrajectory& setRobotTrajectoryMsg(const moveit::core::RobotState& reference_state,
+  //                                        const moveit_msgs::RobotState& state,
+  //                                        const moveit_msgs::RobotTrajectory& trajectory);
 
   RobotTrajectory& reverse();
 
   RobotTrajectory& unwind();
-  RobotTrajectory& unwind(const moveit::core::RobotState& state);
+  // RobotTrajectory& unwind(const moveit::core::RobotState& state);
 
   /** @brief Finds the waypoint indicies before and after a duration from start.
    *  @param duration The duration from start.
@@ -292,12 +293,12 @@ public:
    *  @param output_state The resulting robot state.
    *  @return True if state is valid, false otherwise (trajectory is empty).
    */
-  bool getStateAtDurationFromStart(const double request_duration, moveit::core::RobotStatePtr& output_state) const;
+  // bool getStateAtDurationFromStart(const double request_duration, moveit::core::RobotStatePtr& output_state) const;
 
 private:
-  moveit::core::RobotModelConstPtr robot_model_;
-  const moveit::core::JointModelGroup* group_;
-  std::deque<moveit::core::RobotStatePtr> waypoints_;
+  // moveit::core::RobotModelConstPtr robot_model_;
+  // const moveit::core::JointModelGroup* group_;
+  // std::deque<moveit::core::RobotStatePtr> waypoints_;
   std::deque<double> duration_from_previous_;
 };
 

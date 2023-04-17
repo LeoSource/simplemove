@@ -17,3 +17,9 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 set(LIB_NAME "simplemove")
 add_library(${LIB_NAME} SHARED ${PROJECT_SOURCE_DIR}/src/robot_trajectory.cpp)
+
+add_subdirectory(examples)
+# set(EXE_NAME "simplemove_demo")
+# link_directories(${LIBRARY_OUTPUT_PATH})
+# add_executable(${EXE_NAME} examples/main.cpp)
+# target_link_libraries(${EXE_NAME} simplemove)

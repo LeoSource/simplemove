@@ -1,0 +1,5 @@
+set(EXE_NAME "simplemove_demo")
+link_directories(${LIBRARY_OUTPUT_PATH})
+add_executable(${EXE_NAME} main.cpp)
+add_dependencies(${EXE_NAME} simplemove)
+target_link_libraries(${EXE_NAME} simplemove)

@@ -37,16 +37,19 @@
 
 #pragma once
 
-#include <moveit/robot_model/robot_model.h>
-#include <moveit/robot_state/attached_body.h>
-#include <moveit/transforms/transforms.h>
-#include <sensor_msgs/JointState.h>
-#include <visualization_msgs/MarkerArray.h>
-#include <std_msgs/ColorRGBA.h>
-#include <geometry_msgs/Twist.h>
+// #include <robot_model/robot_model.h>
+// #include <moveit/robot_state/attached_body.h>
+// #include <moveit/transforms/transforms.h>
+// #include <sensor_msgs/JointState.h>
+// #include <visualization_msgs/MarkerArray.h>
+// #include <std_msgs/ColorRGBA.h>
+// #include <geometry_msgs/Twist.h>
 #include <cassert>
+#include <vector>
+#include <string>
+#include <map>
 
-#include <boost/assert.hpp>
+// #include <boost/assert.hpp>
 
 /* Terminology
    * Model Frame: RobotModel's root frame == PlanningScene's planning frame
@@ -65,9 +68,9 @@ MOVEIT_CLASS_FORWARD(RobotState);  // Defines RobotStatePtr, ConstPtr, WeakPtr..
    joint_group_variable_values
     the state is valid or not. Returns true if the state is valid. This call is allowed to modify \e robot_state (e.g.,
    set \e joint_group_variable_values) */
-typedef boost::function<bool(RobotState* robot_state, const JointModelGroup* joint_group,
-                             const double* joint_group_variable_values)>
-    GroupStateValidityCallbackFn;
+// typedef boost::function<bool(RobotState* robot_state, const JointModelGroup* joint_group,
+//                              const double* joint_group_variable_values)>
+//     GroupStateValidityCallbackFn;
 
 /** \brief Representation of a robot's state. This includes position,
     velocity, acceleration and effort.
@@ -113,28 +116,28 @@ public:
   }
 
   /** \brief Get the names of the variables that make up this state, in the order they are stored in memory. */
-  const std::vector<std::string>& getVariableNames() const
-  {
-    return robot_model_->getVariableNames();
-  }
+  // const std::vector<std::string>& getVariableNames() const
+  // {
+  //   return robot_model_->getVariableNames();
+  // }
 
   /** \brief Get the model of a particular link */
-  const LinkModel* getLinkModel(const std::string& link) const
-  {
-    return robot_model_->getLinkModel(link);
-  }
+  // const LinkModel* getLinkModel(const std::string& link) const
+  // {
+  //   return robot_model_->getLinkModel(link);
+  // }
 
   /** \brief Get the model of a particular joint */
-  const JointModel* getJointModel(const std::string& joint) const
-  {
-    return robot_model_->getJointModel(joint);
-  }
+  // const JointModel* getJointModel(const std::string& joint) const
+  // {
+  //   return robot_model_->getJointModel(joint);
+  // }
 
   /** \brief Get the model of a particular joint group */
-  const JointModelGroup* getJointModelGroup(const std::string& group) const
-  {
-    return robot_model_->getJointModelGroup(group);
-  }
+  // const JointModelGroup* getJointModelGroup(const std::string& group) const
+  // {
+  //   return robot_model_->getJointModelGroup(group);
+  // }
 
   /** \name Getting and setting variable position
    *  @{

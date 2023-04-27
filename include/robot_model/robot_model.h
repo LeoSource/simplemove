@@ -37,18 +37,18 @@
 
 #pragma once
 
-#include <moveit/macros/class_forward.h>
-#include <moveit/exceptions/exceptions.h>
-#include <urdf/model.h>
-#include <srdfdom/model.h>
+#include <class_forward.h>
+// #include <moveit/exceptions/exceptions.h>
+// #include <urdf/model.h>
+// #include <srdfdom/model.h>
 
 // joint types
-#include <moveit/robot_model/joint_model_group.h>
-#include <moveit/robot_model/fixed_joint_model.h>
-#include <moveit/robot_model/floating_joint_model.h>
-#include <moveit/robot_model/planar_joint_model.h>
-#include <moveit/robot_model/revolute_joint_model.h>
-#include <moveit/robot_model/prismatic_joint_model.h>
+// #include <robot_model/joint_model_group.h>
+// #include <robot_model/fixed_joint_model.h>
+// #include <robot_model/floating_joint_model.h>
+// #include <robot_model/planar_joint_model.h>
+// #include <robot_model/revolute_joint_model.h>
+// #include <robot_model/prismatic_joint_model.h>
 
 #include <Eigen/Geometry>
 #include <iostream>
@@ -65,9 +65,9 @@ static inline void checkInterpolationParamBounds(const char LOGNAME[], double t)
 {
   if (std::isnan(t) || std::isinf(t))
   {
-    throw Exception("Interpolation parameter is NaN or inf.");
+    // throw Exception("Interpolation parameter is NaN or inf.");
   }
-  ROS_WARN_STREAM_COND_NAMED(t < 0. || t > 1., LOGNAME, "Interpolation parameter is not in the range [0, 1]: " << t);
+  // ROS_WARN_STREAM_COND_NAMED(t < 0. || t > 1., LOGNAME, "Interpolation parameter is not in the range [0, 1]: " << t);
 }
 
 /** \brief Definition of a kinematic model. This class is not thread
@@ -76,7 +76,7 @@ class RobotModel
 {
 public:
   /** \brief Construct a kinematic model from a parsed description and a list of planning groups */
-  RobotModel(const urdf::ModelInterfaceSharedPtr& urdf_model, const srdf::ModelConstSharedPtr& srdf_model);
+  // RobotModel(const urdf::ModelInterfaceSharedPtr& urdf_model, const srdf::ModelConstSharedPtr& srdf_model);
 
   /** \brief Destructor. Clear all memory. */
   ~RobotModel();
@@ -103,16 +103,16 @@ public:
   }
 
   /** \brief Get the parsed URDF model */
-  const urdf::ModelInterfaceSharedPtr& getURDF() const
-  {
-    return urdf_;
-  }
+  // const urdf::ModelInterfaceSharedPtr& getURDF() const
+  // {
+  //   return urdf_;
+  // }
 
   /** \brief Get the parsed SRDF model */
-  const srdf::ModelConstSharedPtr& getSRDF() const
-  {
-    return srdf_;
-  }
+  // const srdf::ModelConstSharedPtr& getSRDF() const
+  // {
+  //   return srdf_;
+  // }
 
   /** \brief Print information about the constructed model */
   void printModelInfo(std::ostream& out) const;

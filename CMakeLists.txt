@@ -15,8 +15,7 @@ find_package(Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIR})
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-set(LIB_NAME "simplemove")
-add_library(${LIB_NAME} SHARED ${PROJECT_SOURCE_DIR}/src/robot_trajectory.cpp)
+add_subdirectory(src)
 
 add_subdirectory(examples)
 # set(EXE_NAME "simplemove_demo")

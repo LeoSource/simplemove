@@ -40,7 +40,7 @@
 #include <Eigen/Geometry>
 #include <algorithm>
 #include <cmath>
-#include "time_optimal_trajectory_generation.h
+#include "time_optimal_trajectory_generation.h"
 // #include <ros/console.h>
 #include <vector>
 
@@ -547,7 +547,8 @@ bool Trajectory::integrateForward(std::list<TrajectoryStep>& trajectory, double 
     else if (path_vel < 0.0)
     {
       valid_ = false;
-      ROS_ERROR_NAMED(LOGNAME, "Error while integrating forward: Negative path velocity");
+      std::cerr<<"Error while integrating forward: Negative path velocity"<<std::endl;
+      // ROS_ERROR_NAMED(LOGNAME, "Error while integrating forward: Negative path velocity");
       return true;
     }
 
@@ -644,7 +645,8 @@ void Trajectory::integrateBackward(std::list<TrajectoryStep>& start_trajectory, 
       if (path_vel < 0.0)
       {
         valid_ = false;
-        ROS_ERROR_NAMED(LOGNAME, "Error while integrating backward: Negative path velocity");
+        std::cout<<"Error while integrating backward: Negative path velocity"<<std::endl;
+        // ROS_ERROR_NAMED(LOGNAME, "Error while integrating backward: Negative path velocity");
         end_trajectory_ = trajectory;
         return;
       }
@@ -673,7 +675,8 @@ void Trajectory::integrateBackward(std::list<TrajectoryStep>& start_trajectory, 
   }
 
   valid_ = false;
-  ROS_ERROR_NAMED(LOGNAME, "Error while integrating backward: Did not hit start trajectory");
+  std::cout<<"Error while integrating backward: Did not hit start trajectory"<<std::endl;
+  // ROS_ERROR_NAMED(LOGNAME, "Error while integrating backward: Did not hit start trajectory");
   end_trajectory_ = trajectory;
 }
 
@@ -871,7 +874,8 @@ bool TimeOptimalTrajectoryGeneration::computeTimeStamps(robot_trajectory::RobotT
   const moveit::core::JointModelGroup* group = trajectory.getGroup();
   if (!group)
   {
-    ROS_ERROR_NAMED(LOGNAME, "It looks like the planner did not set the group the plan was computed for");
+    std::cerr<<"It looks like the planner did not set the group the plan was computed for"<<std::endl;
+    // ROS_ERROR_NAMED(LOGNAME, "It looks like the planner did not set the group the plan was computed for");
     return false;
   }
 
@@ -883,13 +887,17 @@ bool TimeOptimalTrajectoryGeneration::computeTimeStamps(robot_trajectory::RobotT
   }
   else if (max_velocity_scaling_factor == 0.0)
   {
-    ROS_DEBUG_NAMED(LOGNAME, "A max_velocity_scaling_factor of 0.0 was specified, defaulting to %f instead.",
-                    velocity_scaling_factor);
+    std::cout<<"A max_velocity_scaling_factor of 0.0 was specified, defaulting to "<<velocity_scaling_factor
+      <<" instead."<<std::endl;
+    // ROS_DEBUG_NAMED(LOGNAME, "A max_velocity_scaling_factor of 0.0 was specified, defaulting to %f instead.",
+    //                 velocity_scaling_factor);
   }
   else
   {
-    ROS_WARN_NAMED(LOGNAME, "Invalid max_velocity_scaling_factor %f specified, defaulting to %f instead.",
-                   max_velocity_scaling_factor, velocity_scaling_factor);
+    std::cout<<"Invalid max_velocity_scaling_factor "<<max_velocity_scaling_factor<<"specified, defaulting to "
+      <<velocity_scaling_factor<<" instead."<<std::endl;
+    // ROS_WARN_NAMED(LOGNAME, "Invalid max_velocity_scaling_factor %f specified, defaulting to %f instead.",
+    //                max_velocity_scaling_factor, velocity_scaling_factor);
   }
 
   double acceleration_scaling_factor = 1.0;
@@ -899,13 +907,17 @@ bool TimeOptimalTrajectoryGeneration::computeTimeStamps(robot_trajectory::RobotT
   }
   else if (max_acceleration_scaling_factor == 0.0)
   {
-    ROS_DEBUG_NAMED(LOGNAME, "A max_acceleration_scaling_factor of 0.0 was specified, defaulting to %f instead.",
-                    acceleration_scaling_factor);
+    std::cout<<"A max_acceleration_scaling_factor of 0.0 was specified, defaulting to "<<acceleration_scaling_factor
+      <<" instead."<<std::endl;
+    // ROS_DEBUG_NAMED(LOGNAME, "A max_acceleration_scaling_factor of 0.0 was specified, defaulting to %f instead.",
+    //                 acceleration_scaling_factor);
   }
   else
   {
-    ROS_WARN_NAMED(LOGNAME, "Invalid max_acceleration_scaling_factor %f specified, defaulting to %f instead.",
-                   max_acceleration_scaling_factor, acceleration_scaling_factor);
+    std::cout<<"Invalid max_acceleration_scaling_factor "<<max_acceleration_scaling_factor<<"specified, defaulting to "
+      <<acceleration_scaling_factor<<" instead.";
+    // ROS_WARN_NAMED(LOGNAME, "Invalid max_acceleration_scaling_factor %f specified, defaulting to %f instead.",
+    //                max_acceleration_scaling_factor, acceleration_scaling_factor);
   }
 
   // This lib does not actually work properly when angles wrap around, so we need to unwind the path first
@@ -931,8 +943,10 @@ bool TimeOptimalTrajectoryGeneration::computeTimeStamps(robot_trajectory::RobotT
     {
       if (bounds.max_velocity_ < std::numeric_limits<double>::epsilon())
       {
-        ROS_ERROR_NAMED(LOGNAME, "Invalid max_velocity %f specified for '%s', must be greater than 0.0",
-                        bounds.max_velocity_, vars[j].c_str());
+        std::cerr<<"Invalid max_velocity "<<bounds.max_velocity_<<" specified for "<<vars[j].c_str()
+          <<"must be greater than 0.0"<<std::endl;
+        // ROS_ERROR_NAMED(LOGNAME, "Invalid max_velocity %f specified for '%s', must be greater than 0.0",
+        //                 bounds.max_velocity_, vars[j].c_str());
         return false;
       }
       max_velocity[j] =
@@ -944,8 +958,10 @@ bool TimeOptimalTrajectoryGeneration::computeTimeStamps(robot_trajectory::RobotT
     {
       if (bounds.max_acceleration_ < std::numeric_limits<double>::epsilon())
       {
-        ROS_ERROR_NAMED(LOGNAME, "Invalid max_acceleration %f specified for '%s', must be greater than 0.0",
-                        bounds.max_acceleration_, vars[j].c_str());
+        std::cout<<"Invalid max_acceleration "<<bounds.max_acceleration_<<" specified for '"<<vars[j].c_str()
+          <<"', must be greater than 0.0"<<std::endl;
+        // ROS_ERROR_NAMED(LOGNAME, "Invalid max_acceleration %f specified for '%s', must be greater than 0.0",
+        //                 bounds.max_acceleration_, vars[j].c_str());
         return false;
       }
       max_acceleration[j] = std::min(std::fabs(bounds.max_acceleration_), std::fabs(bounds.min_acceleration_)) *
@@ -980,8 +996,9 @@ bool TimeOptimalTrajectoryGeneration::computeTimeStamps(robot_trajectory::RobotT
   // Return trajectory with only the first waypoint if there are not multiple diverse points
   if (points.size() == 1)
   {
-    ROS_DEBUG_NAMED(LOGNAME,
-                    "Trajectory is parameterized with 0.0 dynamics since it only contains a single distinct waypoint.");
+    std::cout<<"Trajectory is parameterized with 0.0 dynamics since it only contains a single distinct waypoint."<<std::endl;
+    // ROS_DEBUG_NAMED(LOGNAME,
+    //                 "Trajectory is parameterized with 0.0 dynamics since it only contains a single distinct waypoint.");
     moveit::core::RobotState waypoint = moveit::core::RobotState(trajectory.getWayPoint(0));
     waypoint.zeroVelocities();
     waypoint.zeroAccelerations();
@@ -994,7 +1011,8 @@ bool TimeOptimalTrajectoryGeneration::computeTimeStamps(robot_trajectory::RobotT
   Trajectory parameterized(Path(points, path_tolerance_), max_velocity, max_acceleration, 0.001);
   if (!parameterized.isValid())
   {
-    ROS_ERROR_NAMED(LOGNAME, "Unable to parameterize trajectory.");
+    std::cerr<<"Unable to parameterize trajectory."<<std::endl;
+    // ROS_ERROR_NAMED(LOGNAME, "Unable to parameterize trajectory.");
     return false;
   }
 

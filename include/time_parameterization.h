@@ -1,6 +1,7 @@
 #pragma once
 
 #include "robot_trajectory.h"
+#include <iostream>
 
 namespace trajectory_processing
 {

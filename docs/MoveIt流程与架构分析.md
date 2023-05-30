@@ -15,8 +15,14 @@
 
 运行demo.launch后的ROS节点图如下图所示：
 ![MoveIt通讯架构简图](MoveIt%E9%80%9A%E8%AE%AF%E6%9E%B6%E6%9E%84%E7%AE%80%E5%9B%BE.PNG)
+`move_group`与外部的交互与通讯框架如下图所示:
+![move_group node通讯框架](move_group_node.png)
 
 ## MoveIt源码分析
+
+MoveIt中最重要的类有`PlanningPipeline`,`OMPLPlannerManager`,`ModelBasedPlanningContext`，其中在`OMPLPlannerManager`中加载OMPL的配置参数，在`ModelBasedPlanningContext`中求解运动规划问题。各主要代码架构如下图所示：
+![MoveIt源码分析结构图](MoveIt源码分析结构图.drawio.svg)
+
 ### 1. main(argc,argv)
 源码地址：`/move_group(/moveit_ros/move_group/src/move_group.cpp)`
 ```C++
@@ -152,6 +158,50 @@ bool generatePlan(const planning_scene::PlanningSceneConstPtr& planning_scene,
 
 // 具体为通过调用adapter_chain_来实现规划
 solved = adapter_chain_->adaptAndPlan(planner_instance_, planning_scene, req, res, adapter_added_state_index);
+```
+
+MoveIt运动规划功能的实现最终落脚到PlanningPipeline，他有两个重要成员变量：`planning_interface::PlannerManagerPtr planner_instance_`和`std::unique_ptr<planning_request_adapter::PlanningRequestAdapterChain> adapter_chain_`，通过`planning_plugin_name`和`adapter_plugin_names`去定义PlanningPipeline的规划器与适配器
+
+
+### 2. 实现PlannerManager
+源码地址：`/moveit_planners/ompl/ompl_interface/src/ompl_planner_manager.cpp`
+```C++
+class OMPLPlannerManager : public planning_interface::PlannerManager
+{
+    ompl_interface_ = std::make_unique<OMPLInterface>(model, nh_);
+}
+```
+
+#### 2.1 初始化OMPLInterface
+源码地址：`/moveit_planners/ompl/ompl_interface/src/ompl_interface.cpp`
+```C++
+/** \brief Initialize OMPL-based planning for a particular robot model. ROS configuration is read from the specified
+ NodeHandle. However,
+    planner configurations are used as specified in \e pconfig instead of reading them from the ROS parameter server
+    */
+OMPLInterface(const moveit::core::RobotModelConstPtr& robot_model,
+            const planning_interface::PlannerConfigurationMap& pconfig,
+            const ros::NodeHandle& nh = ros::NodeHandle("~"));
+// 初始化PlanningContextManager
+context_manager_(robot_model, constraint_sampler_manager_)
+```
+
+##### 2.1.1 初始化PlanningContextManager
+源码地址：`/moveit_planners/ompl/ompl_interface/src/planning_context_manager.cpp`
+```C++
+/** \brief Returns a planning context to OMPLInterface, which in turn passes it to OMPLPlannerManager.
+ *
+ * This function checks the input and reads planner specific configurations.
+ * Then it creates the planning context with PlanningContextManager::createPlanningContext.
+ * Finally, it puts the context into a state appropriate for planning.
+ * This last step involves setting the start, goal, and state validity checker using the method
+ * ModelBasedPlanningContext::configure.
+ *
+ * */
+ModelBasedPlanningContextPtr getPlanningContext(const planning_scene::PlanningSceneConstPtr& planning_scene,
+                                                const planning_interface::MotionPlanRequest& req,
+                                                moveit_msgs::MoveItErrorCodes& error_code, const ros::NodeHandle& nh,
+                                                bool use_constraints_approximations) const;
 ```
 
 

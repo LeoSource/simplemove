@@ -1,0 +1,489 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1372px" height="994px" viewBox="-0.5 -0.5 1372 994" content="&lt;mxfile&gt;&lt;diagram id=&quot;cZBFv7CyOE_QJXn2Ob5j&quot; name=&quot;Page-1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <clipPath id="mx-clip-263-231-352-44-0">
+            <rect x="263" y="231" width="352" height="44"/>
+        </clipPath>
+        <clipPath id="mx-clip-263-283-352-62-0">
+            <rect x="263" y="283" width="352" height="62"/>
+        </clipPath>
+        <clipPath id="mx-clip-4-405-362-64-0">
+            <rect x="4" y="405" width="362" height="64"/>
+        </clipPath>
+        <clipPath id="mx-clip-5-550-362-26-0">
+            <rect x="5" y="550" width="362" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-5-584-362-60-0">
+            <rect x="5" y="584" width="362" height="60"/>
+        </clipPath>
+        <clipPath id="mx-clip-5-725-362-26-0">
+            <rect x="5" y="725" width="362" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-5-759-362-60-0">
+            <rect x="5" y="759" width="362" height="60"/>
+        </clipPath>
+        <clipPath id="mx-clip-5-911-362-84-0">
+            <rect x="5" y="911" width="362" height="84"/>
+        </clipPath>
+        <clipPath id="mx-clip-525-405-362-26-0">
+            <rect x="525" y="405" width="362" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-525-439-362-80-0">
+            <rect x="525" y="439" width="362" height="80"/>
+        </clipPath>
+        <clipPath id="mx-clip-525-601-362-24-0">
+            <rect x="525" y="601" width="362" height="24"/>
+        </clipPath>
+        <clipPath id="mx-clip-525-711-362-24-0">
+            <rect x="525" y="711" width="362" height="24"/>
+        </clipPath>
+        <clipPath id="mx-clip-1005-445-362-24-0">
+            <rect x="1005" y="445" width="362" height="24"/>
+        </clipPath>
+        <clipPath id="mx-clip-1005-595-362-25-0">
+            <rect x="1005" y="595" width="362" height="25"/>
+        </clipPath>
+    </defs>
+    <g>
+        <rect x="171" y="27" width="100" height="40" rx="6" ry="6" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 47px; margin-left: 172px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 22px;">
+                                    main
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="221" y="51" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    main
+                </text>
+            </switch>
+        </g>
+        <rect x="320" y="27" width="192" height="40" rx="6" ry="6" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 190px; height: 1px; padding-top: 47px; margin-left: 321px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 22px;">
+                                    MoveGroupExe
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="416" y="51" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    MoveGroupExe
+                </text>
+            </switch>
+        </g>
+        <path d="M 271 47 L 320 47" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <rect x="572" y="17" width="240" height="60" rx="9" ry="9" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 47px; margin-left: 573px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 15px;">
+                                    <span style="font-size: 22px;">
+                                        MoveGroupContext
+                                    </span>
+                                    <br/>
+                                    <font style="font-size: 15px;">
+                                        (
+                                    </font>
+                                </font>
+                                <font style="font-size: 15px;">
+                                    成员变量
+                                </font>
+                                <font style="font-size: 15px;">
+                                    <font style="font-size: 15px;">
+                                        )
+                                    </font>
+                                    <br/>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="692" y="51" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    MoveGroupContext...
+                </text>
+            </switch>
+        </g>
+        <rect x="872" y="17" width="240" height="60" rx="9" ry="9" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 47px; margin-left: 873px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="">
+                                    <span style="font-size: 22px;">
+                                        PlanningPipeline
+                                    </span>
+                                    <br/>
+                                    <font style="font-size: 15px;">
+                                        (成员变量)
+                                    </font>
+                                    <br/>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="992" y="51" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    PlanningPipeline...
+                </text>
+            </switch>
+        </g>
+        <path d="M 512 47 L 572 47" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 812 47 L 872 47" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 7px; margin-left: 257px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 22px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 15px;">
+                                    实例化
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="296" y="29" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="22px" text-anchor="middle">
+                    实例化
+                </text>
+            </switch>
+        </g>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 9px; margin-left: 505px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 22px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 15px;">
+                                    包含
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="544" y="31" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="22px" text-anchor="middle">
+                    包含
+                </text>
+            </switch>
+        </g>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 10px; margin-left: 799px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 22px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 15px;">
+                                    包含
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="838" y="32" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="22px" text-anchor="middle">
+                    包含
+                </text>
+            </switch>
+        </g>
+        <path d="M 259 226 L 259 200 L 619 200 L 619 226" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 259 226 L 259 340 L 619 340 L 619 226" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 259 226 L 619 226" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="438.5" y="220.5">
+                PlanningPipeline
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-263-231-352-44-0)" font-size="15px">
+            <text x="264.5" y="246.5">
+                + planner_instance: PlannerManager
+            </text>
+            <text x="264.5" y="264.5">
+                + adapter_chain:PlanningRequestAdapterChain
+            </text>
+        </g>
+        <path d="M 259 274 L 619 274" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-263-283-352-62-0)" font-size="15px">
+            <text x="264.5" y="298.5">
+                + generatePlan(const PlanningSceneConsPtr&amp;,
+            </text>
+            <text x="264.5" y="316.5">
+                const MotionPlanRequest&amp;,
+            </text>
+            <text x="264.5" y="334.5">
+                MotionPlanResponse&amp;): bool
+            </text>
+        </g>
+        <path d="M 0 400 L 0 374 L 370 374 L 370 400" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 0 400 L 0 464 L 370 464 L 370 400" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 0 400 L 370 400" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="184.5" y="394.5">
+                PlannerManager
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-4-405-362-64-0)" font-size="15px">
+            <text x="5.5" y="420.5">
+                + getPlanningContext(const PlanningSceneConsPtr&amp;,
+            </text>
+            <text x="5.5" y="438.5">
+                const MotionPlanRequest&amp;,
+            </text>
+            <text x="5.5" y="456.5">
+                MoveItErrorCode&amp;): PlanningContextPtr
+            </text>
+        </g>
+        <path d="M 1 545 L 1 519 L 371 519 L 371 545" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 545 L 1 639 L 371 639 L 371 545" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 545 L 371 545" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="185.5" y="539.5">
+                OMPLPlannerManager
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-5-550-362-26-0)" font-size="15px">
+            <text x="6.5" y="565.5">
+                + ompl_interface: OMPLInterface
+            </text>
+        </g>
+        <path d="M 1 575 L 371 575" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-5-584-362-60-0)" font-size="15px">
+            <text x="6.5" y="599.5">
+                + getPlanningContext(const PlanningSceneConsPtr&amp;,
+            </text>
+            <text x="6.5" y="617.5">
+                const MotionPlanRequest&amp;,
+            </text>
+            <text x="6.5" y="635.5">
+                MoveItErrorCode&amp;): PlanningContextPtr
+            </text>
+        </g>
+        <path d="M 186 519 L 186 478.12" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/>
+        <path d="M 186 465.12 L 192.5 478.12 L 179.5 478.12 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 185 374 L 185 280 Q 185 270 195 270 L 233.01 270" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 258.01 270 L 245.51 277.35 L 233.01 270 L 245.51 262.65 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 720 L 1 694 L 371 694 L 371 720" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 720 L 1 814 L 371 814 L 371 720" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 720 L 371 720" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="185.5" y="714.5">
+                OMPLInterface
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-5-725-362-26-0)" font-size="15px">
+            <text x="6.5" y="740.5">
+                + context_manager: PlanningContextManager
+            </text>
+        </g>
+        <path d="M 1 750 L 371 750" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-5-759-362-60-0)" font-size="15px">
+            <text x="6.5" y="774.5">
+                + getPlanningContext(const PlanningSceneConsPtr&amp;,
+            </text>
+            <text x="6.5" y="792.5">
+                const MotionPlanRequest&amp;,
+            </text>
+            <text x="6.5" y="810.5">
+                MoveItErrorCode&amp;): PlanningContextPtr
+            </text>
+        </g>
+        <path d="M 186 694 L 186 664.99" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 186 639.99 L 193.35 652.49 L 186 664.99 L 178.65 652.49 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 906 L 1 880 L 371 880 L 371 906" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 906 L 1 990 L 371 990 L 371 906" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 906 L 371 906" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="185.5" y="900.5">
+                PlanningContextManager
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-5-911-362-84-0)" font-size="15px">
+            <text x="6.5" y="926.5">
+                + getPlanningContext(const PlanningSceneConsPtr&amp;,
+            </text>
+            <text x="6.5" y="944.5">
+                const MotionPlanRequest&amp;, MoveItErrorCode&amp;,
+            </text>
+            <text x="6.5" y="962.5">
+                const NodeHandle, bool):
+            </text>
+            <text x="6.5" y="980.5">
+                ModeBasedPlannigContextPtr
+            </text>
+        </g>
+        <path d="M 186 880 L 186 839.99" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 186 814.99 L 193.35 827.49 L 186 839.99 L 178.65 827.49 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 400 L 521 374 L 891 374 L 891 400" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 400 L 521 514 L 891 514 L 891 400" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 400 L 891 400" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="705.5" y="394.5">
+                PlanningRequestAdapterChain
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-525-405-362-26-0)" font-size="15px">
+            <text x="526.5" y="420.5">
+                + adapters: PlanningRequestAdapterConstPtr
+            </text>
+        </g>
+        <path d="M 521 430 L 891 430" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-525-439-362-80-0)" font-size="15px">
+            <text x="526.5" y="454.5">
+                + adaptAndPlan(const PlannerManager&amp;,
+            </text>
+            <text x="526.5" y="472.5">
+                const PlanningSceneConstPtr&amp;,
+            </text>
+            <text x="526.5" y="490.5">
+                cosnt MotionPlanRequest&amp;, MotionPlanResponse&amp;)
+            </text>
+            <text x="526.5" y="508.5">
+                : bool
+            </text>
+        </g>
+        <path d="M 706 374 L 706 280 Q 706 270 696 270 L 644.99 270" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 619.99 270 L 632.49 262.65 L 644.99 270 L 632.49 277.35 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 440.24 L 371.84 417.8" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 384.56 413.14 L 370.74 417.64 L 382.62 426" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 596 L 521 570 L 891 570 L 891 596" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 596 L 521 620 L 891 620 L 891 596" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 596 L 891 596" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="705.5" y="590.5">
+                PlanningContext
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-525-601-362-24-0)" font-size="15px">
+            <text x="526.5" y="616.5">
+                + solve(MotionPlanResponse&amp;): bool
+            </text>
+        </g>
+        <path d="M 521 706 L 521 680 L 891 680 L 891 706" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 706 L 521 730 L 891 730 L 891 706" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 521 706 L 891 706" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="705.5" y="700.5">
+                ModelBasedPlanningContext
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-525-711-362-24-0)" font-size="15px">
+            <text x="526.5" y="726.5">
+                + solve(MotionPlanResponse&amp;): bool
+            </text>
+        </g>
+        <path d="M 699.71 514.16 L 700.78 567.76" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/>
+        <path d="M 694.04 556.01 L 700.8 568.88 L 707.04 555.76" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 542px; margin-left: 700px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; background-color: rgb(255, 255, 255); white-space: nowrap;">
+                                Use
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="700" y="547" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="15px" text-anchor="middle">
+                    Use
+                </text>
+            </switch>
+        </g>
+        <path d="M 706 680 L 706 635.39" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/>
+        <path d="M 706 622.39 L 712.5 635.39 L 699.5 635.39 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 371 948 L 441 948 Q 451 948 451 938 L 451 600 Q 451 590 461 590 L 518.76 590" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 506.88 596.5 L 519.88 590 L 506.88 583.5" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 440 L 1001 414 L 1371 414 L 1371 440" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 440 L 1001 464 L 1371 464 L 1371 440" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 440 L 1371 440" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="1185.5" y="434.5">
+                PlanningRequestAdapter
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1005-445-362-24-0)" font-size="15px">
+            <text x="1006.5" y="460.5">
+                + adaptAndPlan(...): bool
+            </text>
+        </g>
+        <path d="M 1001.74 444.2 L 917.73 444.72" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 892.73 444.87 L 905.18 437.44 L 917.73 444.72 L 905.27 452.15 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 590 L 1001 525 L 1371 525 L 1371 590" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 590 L 1001 615 L 1371 615 L 1371 590" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 590 L 1371 590" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="1185.5" y="545.5">
+                AddTimeParameterization
+            </text>
+            <text x="1185.5" y="563.5">
+                AddRuckigTrajectorySmoothing
+            </text>
+            <text x="1185.5" y="581.5">
+                ... ...
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1005-595-362-25-0)" font-size="15px">
+            <text x="1006.5" y="610.5">
+                + adaptAndPlan(...): bool
+            </text>
+        </g>
+        <path d="M 1186 525 L 1186 478.12" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/>
+        <path d="M 1186 465.12 L 1192.5 478.12 L 1179.5 478.12 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 768 L 1001 687 L 1371 687 L 1371 768" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 768 L 1001 777 L 1371 777 L 1371 768" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 768 L 1371 768" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="15px">
+            <text x="1185.5" y="707.5">
+                IterativeSplineParameterization
+            </text>
+            <text x="1185.5" y="725.5">
+                IterativeParabolicTimeParameterization
+            </text>
+            <text x="1185.5" y="743.5">
+                TimeOptimalTrajectoryGeneration
+            </text>
+            <text x="1185.5" y="761.5">
+                RuckigSmoothing
+            </text>
+        </g>
+        <path d="M 1186 615 L 1186 684.76" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/>
+        <path d="M 1179.5 672.88 L 1186 685.88 L 1192.5 672.88" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 651px; margin-left: 1186px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; background-color: rgb(255, 255, 255); white-space: nowrap;">
+                                Use
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="1186" y="656" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="15px" text-anchor="middle">
+                    Use
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>
